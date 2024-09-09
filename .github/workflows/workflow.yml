@@ -2,9 +2,9 @@
 
     on:
       push:
-        branches: [ "main" ]
+        branches: [ "master" ]
       pull_request:
-        branches: [ "main" ]
+        branches: [ "master" ]
 
     jobs:
       build:
@@ -27,5 +27,5 @@
           - name: Run unit tests with nose
             run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
 
-            
+
 
